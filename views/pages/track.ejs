@@ -1,0 +1,22 @@
+<% include ../partials/header.ejs %>
+
+<div class="container">
+    <div class="col-md-6 col-md-push-3">
+      <br>
+      <form class="" action="/track" method="post">
+          <div class="form-group">
+            <label for="weight">Weight</label>
+            <input type="number" id="weight" name="weight" class="form-control" required placeholder="0">
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" class="form-control" required>
+          </div>
+
+          <button type="submit" class="btn btn-default" name="button">Add to tracker</button>
+      </form>
+    </div>
+</div>
+
+<% include ../partials/footer.ejs %>

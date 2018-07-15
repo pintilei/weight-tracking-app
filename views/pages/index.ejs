@@ -1,3 +1,14 @@
 <% include ../partials/header.ejs %>
-
+<div class="container">
+  <h1>Your weight tracker logs:</h1>
+  <a href="/track" class="btn btn-default">Track weight</a>
+  <hr>
+  <% for(let i = 0; i < trackerLogs.length; i++) { %>
+      <div class="tracker-log">
+        <p><%= trackerLogs[i].weight %> kg</p>
+        <p>on <%= trackerLogs[i].date.toDateString() %></p>
+        <hr>
+      </div>
+  <% } %>
+</div>
 <% include ../partials/footer.ejs %>
