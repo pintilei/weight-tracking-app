@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 var moment = require('moment');
 
 module.exports = (Tracker) => {
-  new CronJob('00 00 22 * * 0-6', () => { // 19:30, each day
+  new CronJob('00 30 19 * * 0-6', () => { // 19:30, each day
       console.log('Start cron job...');
 
       var start = moment().startOf('day');
